@@ -4,10 +4,10 @@ import { createConnection } from "mysql2/promise";
 // Função para conectar ao MySQL
 async function connectToDatabase() {
     return createConnection({
-        port: 3309, // só se a porta for diferente de 3306
+        port: 3306, // só se a porta for diferente de 3306
         host: 'localhost',
         user: 'root',
-        password: '$Objetivo*15',
+        password: '',
         database: 'teste-api',   
     });
 }
